@@ -1,0 +1,33 @@
+//***
+Sample Input 1:
+2
+6 3
+1 2 3 4 5 6
+5 2
+10 9 8 7 6
+Sample Output 1:
+1 2 3 4 6 5
+10 9 8 6 7
+***
+//
+
+
+import java.util.* ;
+import java.io.*; 
+import java.util.ArrayList;
+
+public class Solution 
+{
+    public static void reverseArray(ArrayList<Integer> arr, int m)
+    {
+        int right=arr.size()-1;
+        int left =m+1;
+        while(right>left){
+         int temp=arr.get(left);
+         arr.set(left,arr.get(right));
+        arr.set(right,temp);
+         left++;
+         right--;
+        }
+    }
+}
