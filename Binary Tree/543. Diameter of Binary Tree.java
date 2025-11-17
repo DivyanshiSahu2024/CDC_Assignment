@@ -32,3 +32,28 @@ class Solution {
         return 1+Math.max(left,right);
     }
 }
+
+
+
+//  [Second Approach]
+class Solution {
+    public int diameterOfBinaryTree(TreeNode root) {
+
+        if(root ==null){return 0;}
+        int leftdia=diameterOfBinaryTree(root.left);
+        int rightdia=diameterOfBinaryTree(root.right);
+
+         int d1=height(root.left);
+         int d2=height(root.right);
+
+         int d=d1+d2+2;
+         return Math.max(d,Math.max(leftdia,rightdia));
+    }
+    private static int height(TreeNode node){
+        if(node==null){return -1;}
+        int lt=height(node.left);
+        int rt=height(node.right);
+
+        return Math.max(lt,rt)+1;
+    }
+}
