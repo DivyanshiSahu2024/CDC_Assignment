@@ -21,3 +21,6 @@ class Solution {
       return true;
     }
 }
+
+
+//optimised solution
