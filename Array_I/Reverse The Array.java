@@ -1,4 +1,4 @@
-//***
+/***
 Sample Input 1:
 2
 6 3
@@ -9,7 +9,7 @@ Sample Output 1:
 1 2 3 4 6 5
 10 9 8 6 7
 ***
-//
+*/
 
 
 import java.util.* ;
