@@ -13,4 +13,11 @@ class Solution {
         }
         return totalsum - sum;
     }
+
+    public static void main(String[] args) {
+        Solution sol = new Solution();
+        int[] nums = {3, 0, 1};
+        System.out.println(sol.missingNumber(nums)); // Output: 2
+        
+    }
 }
