@@ -49,6 +49,6 @@ class KahnsAlgo{
         for(int i:ans){
             System.out.print(i+" ");
         }
-
+        sc.close();
     }
 }

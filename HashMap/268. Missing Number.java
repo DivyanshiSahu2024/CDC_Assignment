@@ -35,5 +35,5 @@ class Solution {
         int[] nums = {3, 0, 1};
         System.out.println(sol.missingNumber(nums)); // Output: 2
         
-    }
+    } 
 }

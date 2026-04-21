@@ -1,7 +1,7 @@
-package GraphProblems;
+package Graphs;
 import java.util.*;
 
-public class BipartiteBFS {
+public class BipartiteGraph {
     
     public static boolean bfs(List<List<Integer>> adjlist, int [] color, int node){
         color[node]=0;

@@ -2,7 +2,7 @@ import java.util.*;
 
 class Solution {
     public boolean validPath(int n, int[][] edges, int source, int destination) {
-        int e = edges.length;
+        //int e = edges.length;
 
         List<List<Integer>> adj = new ArrayList<>();
         for (int i = 0; i < n; i++) {
